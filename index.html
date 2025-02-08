@@ -10,14 +10,101 @@
 </head>
 <body class="font-poppins">
     <main class="min-h-screen bg-slate-500 bg-[url(images/background.png)] bg-no-repeat flex flex-col justify-center bg-center">
-        <section class="home">
+        <!--home screen-->
+        <section class="home hidden">
             <div class="text-white flex items-center justify-center flex-col gap-5">
                 <h1 class="text-6xl uppercase font-bold">Alpha Clash Pro</h1>
                 <p>Enter the "play now" button,& start playing.</p>
                 <button class="btn btn-outline btn-secondary text-white">Play Now</button>
             </div>
         </section>
-        <section class="play-ground"></section>
+        <!--playground-->
+        <section class="play-ground">
+            <div class="flex flex-col items-center gap-5">
+                <!--display-->
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313cc] bg-[#ffffffb3] flex-col justify-center items-center">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2f2941] text-white px-6 pb-4 rounded-b-xl">Don't watch display,while playing....</p>
+                    </div>
+                    <div class=" flex justify-center items-center h-full ">
+                        <p class="text-8xl font-bold">Y</p>
+                    </div>
+                </div>
+                <!--keyboard-->
+                <div>
+                    <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div>
+                      <div class="my-1 flex w-full justify-center gap-1">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                </div>
+                <!--life-->
+                <div class="px-4 flex justify-between w-3/4">
+                    <button class="btn rounded-full bg-green-500 text-white">
+                        Life
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span>1</span>
+                      </button>
+
+                      <button class="btn rounded-full bg-green-500 text-white">
+                        Score
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span>1</span>
+                      </button>
+                </div>
+            </div>
+        </section>
+        <!--final score-->
         <section class="score"></section>
     </main>
     
