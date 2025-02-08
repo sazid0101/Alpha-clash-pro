@@ -10,19 +10,22 @@ function handleKeyboardButtonPress(event){
         removeBackgroundColorById(expectedAlphabet) //call for remove immediate pressed key color
         continueGame()   //function call for get continuously alphabet.
 
-        const currentScoreElement = document.getElementById("current-score"); //current score
-        const currentScoreText = currentScoreElement.innerText;
-        const currentScore = parseInt(currentScoreText)
+        const currentScore = getTextElementValueById("current-score"); //current score
+        // const currentScoreText = currentScoreElement.innerText;         //if we don't use function,than it will be work.
+        // const currentScore = parseInt(currentScoreText)
         
         const newScore = currentScore + 1;   //if pressed right key,will get +1 point.
-        currentScoreElement.innerText = newScore;
+        setTextElementValueById("current-score", newScore)
     }else{
-        const currentLifeElement = document.getElementById("current-life");  //current life
-        const currentLifeText = currentLifeElement.innerText;
-        const currentLife = parseInt(currentLifeText);
+        const currentLife = getTextElementValueById("current-life");  //current life
+        // const currentLifeText = currentLifeElement.innerText;
+        // const currentLife = parseInt(currentLifeText);
 
         const newLife = currentLife -1;   // if pressed the wrong key,will minus 1 point
-        currentLifeElement.innerText = newLife
+        setTextElementValueById("current-life", newLife)
+        if(newLife === 0){
+            gameOver();
+        }
     }
 }
 // key pressed...
@@ -42,4 +45,16 @@ function play(){
     hideElementById("home-screen");
     showElementById("play-ground");
     continueGame();
+}
+
+function gameOver(){
+    hideElementById("play-ground")
+    showElementById("final-score")
+}
+
+function playAgain(){
+    hideElementById("final-score")
+    showElementById("play-ground")
+    setTextElementValueById("current-score", 0)
+    setTextElementValueById("current-life", 5)
 }
