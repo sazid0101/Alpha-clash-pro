@@ -8,6 +8,11 @@ function showElementById(elementId){
     const playGround = document.getElementById(elementId);
     playGround.classList.remove("hidden");
 }
+// add background color in key which is pressed by user
+function setBackgroundColorById(elementId){
+    const key = document.getElementById(elementId);
+    key.classList.add("bg-orange-400");
+}
 // generate a random number for a-z random alphabets
 function getRandomAlphabet(){
     const alphabetString = "abcdefghijklmnopqrstuvwxyz" ;
