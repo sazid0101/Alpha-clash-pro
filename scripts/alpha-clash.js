@@ -1,3 +1,4 @@
 function play(){
-    console.log("starts")
+    hideElementById("home-screen")
+    showElementById("play-ground")
 }

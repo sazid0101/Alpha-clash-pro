@@ -11,7 +11,7 @@
 <body class="font-poppins">
     <main class="min-h-screen bg-slate-500 bg-[url(images/background.png)] bg-no-repeat flex flex-col justify-center bg-center">
         <!--home screen-->
-        <section class="home ">
+        <section id="home-screen" class="">
             <div class="text-white flex items-center justify-center flex-col gap-5">
                 <h1 class="text-6xl uppercase font-bold">Alpha Clash Pro</h1>
                 <p>Enter the "play now" button,& start playing.</p>
@@ -19,7 +19,7 @@
             </div>
         </section>
         <!--playground-->
-        <section class="play-ground hidden">
+        <section id="play-ground" class="play-ground hidden">
             <div class="flex flex-col items-center gap-5">
                 <!--display-->
                 <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313cc] bg-[#ffffffb3] flex-col justify-center items-center">
@@ -116,6 +116,7 @@
             </div>
         </section>
     </main>
+    <script src="scripts/utility.js"></script>
     <script src="scripts/alpha-clash.js"></script>
 </body>
 </html>
