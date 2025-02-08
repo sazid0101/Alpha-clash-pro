@@ -1,6 +1,10 @@
 // addEventListener for key press.
 function handleKeyboardButtonPress(event){
     const playerPressed = event.key
+    //if player want to close the game,press esc button
+    if(playerPressed === "Escape"){
+        gameOver()
+    }
     // get the expected key to press
     const currentAlphabetElement = document.getElementById("current-alphabet");
     const currentAlphabet = currentAlphabetElement.innerText;
@@ -50,6 +54,9 @@ function play(){
 function gameOver(){
     hideElementById("play-ground")
     showElementById("final-score")
+
+    const lastScore =  getTextElementValueById("current-score")
+    setTextElementValueById("last-score", lastScore)
 }
 
 function playAgain(){
