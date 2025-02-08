@@ -13,6 +13,11 @@ function setBackgroundColorById(elementId){
     const key = document.getElementById(elementId);
     key.classList.add("bg-orange-400");
 }
+// remove background color by id,which key is pressed immediately
+function removeBackgroundColorById(elementId){
+    const key = document.getElementById(elementId);
+    key.classList.remove("bg-orange-400");
+}
 // generate a random number for a-z random alphabets
 function getRandomAlphabet(){
     const alphabetString = "abcdefghijklmnopqrstuvwxyz" ;
