@@ -11,11 +11,11 @@
 <body class="font-poppins">
     <main class="min-h-screen bg-slate-500 bg-[url(images/background.png)] bg-no-repeat flex flex-col justify-center bg-center">
         <!--home screen-->
-        <section class="home hidden">
+        <section class="home ">
             <div class="text-white flex items-center justify-center flex-col gap-5">
                 <h1 class="text-6xl uppercase font-bold">Alpha Clash Pro</h1>
                 <p>Enter the "play now" button,& start playing.</p>
-                <button class="btn btn-outline btn-secondary text-white">Play Now</button>
+                <button onclick="play()" class="btn btn-outline btn-secondary text-white">Play Now</button>
             </div>
         </section>
         <!--playground-->
@@ -105,8 +105,8 @@
             </div>
         </section>
         <!--final score-->
-        <section class="score text-white justify-center items-center flex">
-            <div class="text-center space-y-4 bg-[#ffffff33] rounded-lg p-5">
+        <section class="score text-white justify-center items-center flex ">
+            <div class=" hidden text-center space-y-4 bg-[#ffffff33] rounded-lg p-5">
                 <h1 class="text-6xl">
                     <span class="font-extrabold">Score:</span>
                     <span>14</span>
@@ -116,6 +116,6 @@
             </div>
         </section>
     </main>
-    
+    <script src="scripts/alpha-clash.js"></script>
 </body>
 </html>
